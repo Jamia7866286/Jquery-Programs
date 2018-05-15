@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <style type="text/css">
+    p {
+        display: none;
+    }
+    </style>
+
+    <body>
+
+<button id="btn">Content show</button>
+        <p>101 BE Naseem</p>
+        <p>102 Diploma Waseem</p>
+        <p>103 BCA Saseem</p>
+        <p>104 MCA Naseem Khan</p>
+        <p>105 Btech Gham</p>
+        <p>106 Mtech Raam</p>
+        <p>107 Phd Naseem Ahmad</p>
+
+        <script type="text/javascript">
+        $(function() {
+            $('#btn').click(function(){
+                $("p:contains('Naseem')").toggle('slow');
+            });
+        });
+        </script>
+
+    </body>
+</html>

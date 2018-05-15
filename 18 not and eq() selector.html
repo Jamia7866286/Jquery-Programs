@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <style type="text/css">
+    .active {
+        color: #fff;
+        background: red;
+        padding: 10px 20px;
+    }
+    </style>
+
+    <body>
+
+        <h1>Naseem</h1>
+        <h1 class="abc">Waseem</h1>
+        <h1>Sameer</h1>
+        <h1>Shakeel</h1>
+        <h1 class="abc">Aamir</h1>
+
+        <script type="text/javascript">
+        $(function() {
+            // $('h1:not(h1.abc)').fadeOut(2000);
+            // $('h1:not(.abc)').fadeOut(2000);
+            $('h1:not(h1:eq(2))').fadeOut('slow');
+        });
+        </script>
+
+    </body>
+</html>

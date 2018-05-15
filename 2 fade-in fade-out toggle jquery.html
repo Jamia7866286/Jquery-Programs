@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<style type="text/css">
+	.fadein{
+		display: none;
+		color: green;
+		font-size: 50px;
+		font-weight: bold;
+	}
+</style>
+<body>
+<p class="a">Hiii Naseem</p>
+<p class="b">Hiii Waseem Ahmad</p>
+<button id="btn">Fade_In_out</button>
+<p class="fadein">Fade in me</p>
+<script type="text/javascript">
+	$(function(){
+		$('#btn').on('click',function(){
+			/*$('p').fadeIn();*/
+			/*$('p').fadeOut();*/
+			/*$('p').fadeToggle(800);*/
+			/*$('p.a,p.b').fadeToggle('slow');*/
+			$('p.fadein').fadeIn('slow');
+		});
+	});
+</script>
+</body>
+</html>

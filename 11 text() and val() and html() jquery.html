@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<style type="text/css">
+
+</style>
+<body>
+
+
+<p id="a">First paragraph</p>
+<p id="b">Second paragraph</p>
+<br>
+<input type="text" id="text" value="Naseem">
+<br>
+<br>
+
+<button id="btn1">Text()</button>
+<button id="btn2">html()</button>
+<button id="btn3">val()</button>
+
+<script>
+	$(function(){
+		$('#btn1').on('click',function(){
+			$('#a').text("Hi Naseem Ahmad how r u.");
+		});
+		$('#btn2').click(function(){
+			$('#b').html("<b>Hi Naseem Ahmad how r u.</b>");
+		});
+		$('#btn3').on('click',function(){
+			$('#text').val("Hiii Naseem Ahmad");
+		});
+	});
+</script>
+</body>

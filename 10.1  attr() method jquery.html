@@ -1,0 +1,28 @@
+<!doctype html>
+<head>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+
+
+	<img src="https://dummyimage.com/300" width="250" height="250"><br>
+	<button>Click to Set Width and Height</button>
+	<p id="message"></p>
+
+
+
+<script type="text/javascript">
+   $(document).ready(function(){
+      $("button").click(function(){
+      $('img').attr({width:"300",height:"300"});
+      $('p').text("New width of image " + $('img').attr("width") + " and Height " + $('img').attr("height"));
+
+
+
+      /* $("img").attr({width:"150",height:"100"});
+	$("#message").text("image width:"+$("img").attr("width")  +  "height:"+$("img").attr("height"));*/
+      });
+   });
+</script>
+</body>
+</html>

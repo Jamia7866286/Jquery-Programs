@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<style type="text/css">
+	.active{
+		color: red;
+	}
+</style>
+<body>
+
+<ul>
+	<li>Item 1</li>
+	<li>Item 2</li>
+	<li>Item 3</li>
+	<li>Item 4</li>
+	<li>Item 5</li>
+	<li>Item 6</li>
+	<li>Item 7</li>
+	<li>Item 8</li>
+	<li>Item 9</li>
+</ul>	
+
+
+
+<script>
+	$(function(){
+		$('ul li').on('click',function(){
+			$(this).prevAll().addClass('active').css({fontSize:'40px',fontWeight:'bold'});
+			$(this).nextAll().removeClass('active').css({fontSize:'initial',fontWeight:'normal'});;
+		});
+	});
+</script>
+</body>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<style>
+	ul{
+		list-style: none;
+		display: flex;
+		justify-content: space-around;
+		background-color: #ddd;
+		width: 60%;
+		margin: 0 auto;
+	}
+	ul li{
+		padding: 12px;
+		cursor: pointer;
+	}
+
+	ul li.active{
+		color: #fff;
+		cursor: pointer;
+	}
+</style>
+<body>
+	
+<ul>
+	<li class="active">Home</li>
+	<li>Blog</li>
+	<li>Contact</li>
+	<li>Gallery</li>
+	<li>About</li>
+</ul>
+<script type="text/javascript">
+	$(function(){
+		$('ul li').click(function(){
+			$(this).addClass('active');
+			$(this).prevAll().addClass('active');
+			$(this).nextAll().removeClass('active');
+		});
+	});
+</script>
+</body>
+</html>

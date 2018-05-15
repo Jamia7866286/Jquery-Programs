@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+}
+	p{
+		position: relative;
+		font-size: 20px;
+		color: white;
+	}
+	div{
+		height: 100px;
+		width: 200px;
+		background-color: #000;
+		position: relative;
+	}
+</style>
+<body>
+
+
+	<div>
+		<p>Hiii Naseem</p>
+		<p>Hiii Waseem Ahmad</p>
+	</div>
+	<button id="btn">Slide_Up_Down</button>
+
+
+<script type="text/javascript">
+	$(function(){
+		$('#btn').on('click',function(){
+			/*$('p').animate({
+				left:'+=200px',
+				opacity:'.5',
+				fontSize:'+=40px',
+				color:'green'
+			});*/
+			/*$('div').animate({*/
+				/*height:'+=80px',
+				width:'+=80px'*/
+				/*height:'hide'*/
+				/*height:'show'*/  //default is show
+				/*height:'toggle',
+				width:'toggle'
+			});*/
+
+			var ch = $('div');
+			ch.animate({height:'300px',opacity:'.5'},'slow');
+			ch.animate({width:'400px',opacity:'.3'},'4000');
+			ch.animate({height:'150px',opacity:'1'});
+			ch.animate({width:'150px',opacity:'.3'},"slow");
+			$('p').animate({fontSize:'25px'},"slow");
+		});
+	});
+</script>
+</body>
+</html>

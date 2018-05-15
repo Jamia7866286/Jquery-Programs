@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<style type="text/css">
+	.active{
+		color: red;
+	}
+</style>
+<body>
+
+<p>Hi I m Naseem Ahmad from <b>U.P</b> but i m living in New Delhi</p>	
+<input type="text" value="" placeholder="Ente Here...">
+<button id="btn1">Text()</button>
+<button id="btn2">Html()</button>
+<button id="btn3">Val()</button>
+
+
+
+<script>
+	$(function(){
+		$('#btn1').on('click',function(){
+			alert("Text: " + $('p').text());
+		});
+		$('#btn2').on('click',function(){
+			alert("HTML: " + $('p').html());
+		});
+		$('#btn3').on('click',function(){
+			alert("Value: " + $('input').val());
+		});
+	});
+</script>
+</body>
